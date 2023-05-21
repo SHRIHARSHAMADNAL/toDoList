@@ -43,9 +43,9 @@ class Task {
     }
   }
 
-const task1 = new Task('Task 1', 'read book', new Date(2023, 5, 21), 'not started');
-const task2 = new Task('Task 2', 'Apply for Exam', new Date(2023, 5, 22), 'in progress');
-const task3 = new Task('Task 3', 'book Match Tickets', new Date(2023, 5, 23), 'not started');
+const task1 = new Task('Task 1', 'read book',new Date("2023-05-21"), 'not started');
+const task2 = new Task('Task 2', 'Apply for Exam',new Date("2023-05-22"), 'in progress');
+const task3 = new Task('Task 3', 'book Match Tickets',new Date("2023-05-23"), 'not started');
 
 const todoList1 = new TodoList('personal To Do List', 'My personal tasks');
 todoList1.addTask(task1);
