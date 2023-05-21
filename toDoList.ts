@@ -34,7 +34,10 @@ class Task {
       task.description = newDescription;
       task.dueDate = newDueDate;
     }
-  
+    updateStatus(task:Task,status:string): void
+    {
+      task.status = status;
+    }
     getTasks(): Task[] {
       return this.tasks;
     }
@@ -56,5 +59,6 @@ console.log(todoList2.getTasks(),"New List 2")
 
 todoList2.deleteTask(task3)
 todoList1.deleteTask(task1)
-console.log(todoList1.getTasks(),"List 1 With Deleted Task")
+todoList1.updateStatus(task2,"completed")
+console.log(todoList1.getTasks(),"List 1 With Deleted Task and status change")
 console.log(todoList2.getTasks(),"List 2 With Deleted Task")
